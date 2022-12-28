@@ -127,9 +127,9 @@ class _InputPageState extends State<InputPage> {
                         const Text("WEIGHT", style: kTextStyle),
                         Text(weight.toString(), style: kNumberStyle),
                         Expanded(
-                            child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
                               RoundIconButton(
                                 icon: FontAwesomeIcons.minus,
                                 onPressed: () {
@@ -140,13 +140,16 @@ class _InputPageState extends State<InputPage> {
                               ),
                               const SizedBox(width: 10.0),
                               RoundIconButton(
-                                  icon: FontAwesomeIcons.plus,
-                                  onPressed: () {
-                                    setState(() {
-                                      weight++;
-                                    });
-                                  }),
-                            ]))
+                                icon: FontAwesomeIcons.plus,
+                                onPressed: () {
+                                  setState(() {
+                                    weight++;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -160,9 +163,9 @@ class _InputPageState extends State<InputPage> {
                         const Text("AGE", style: kTextStyle),
                         Text(age.toString(), style: kNumberStyle),
                         Expanded(
-                            child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
                               RoundIconButton(
                                 icon: FontAwesomeIcons.minus,
                                 onPressed: () {
@@ -173,13 +176,16 @@ class _InputPageState extends State<InputPage> {
                               ),
                               const SizedBox(width: 10.0),
                               RoundIconButton(
-                                  icon: FontAwesomeIcons.plus,
-                                  onPressed: () {
-                                    setState(() {
-                                      age++;
-                                    });
-                                  }),
-                            ]))
+                                icon: FontAwesomeIcons.plus,
+                                onPressed: () {
+                                  setState(() {
+                                    age++;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
