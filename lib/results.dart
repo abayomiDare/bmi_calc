@@ -44,10 +44,13 @@ class ResultScreen extends StatelessWidget {
                     calcResult,
                     style: kBMITextStyle,
                   ),
-                  Text(
-                    getDescription,
-                    textAlign: TextAlign.center,
-                    style: kBodyTextStyle,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      getDescription,
+                      textAlign: TextAlign.center,
+                      style: kBodyTextStyle,
+                    ),
                   ),
                 ],
               ),
